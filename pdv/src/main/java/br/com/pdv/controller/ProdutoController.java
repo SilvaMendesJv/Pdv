@@ -13,7 +13,7 @@ public class ProdutoController {
 	
 	@GetMapping({"/produtos"})
 	public String home(ModelMap model) {
-		model.addAttribute("lojas", produtoRepository.findAll());
+		model.addAttribute("produtos", produtoRepository.findAll());
 		return "produtos";
 	}
 
