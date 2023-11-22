@@ -6,18 +6,18 @@
     <title>Lojas Shows</title>
 </head>
 <body>
- 	<h1>Itens cadastrados:</h1>
+ 	<h1>Lojas cadastradas:</h1>
     <table class="table table-sm table-striped table-hover table-bordered">
 		<thead>
 			<tr>
 				<th>ID</th>
-				<th>Nome do Item</th>
+				<th>Nome do vendedor</th>
 			</tr>
 		</thead>
 		<tbody>
-			<tr th:each="item : ${itens}">
-				<td th:text="${item.id}"></td>
-				<td th:text="${item.nome}"></td>
+			<tr th:each="vendedor : ${vendedores}">
+				<td th:text="${vendedor.id}"></td>
+				<td th:text="${vendedor.nome}"></td>
 			</tr>
 		</tbody>
 		
